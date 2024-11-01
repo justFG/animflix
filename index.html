@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Anime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Ma Collection d'Animés</h1>
+    </header>
+    <main id="main-content">
+        <!-- Les cartes des animés seront ajoutées ici dynamiquement -->
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2 id="anime-title">Titre de l'animé</h2>
+            <p id="anime-description">Description de l'animé.</p>
+            <label for="season-select">Choisir une saison:</label>
+            <select id="season-select"></select>
+            <div id="episode-list"></div>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

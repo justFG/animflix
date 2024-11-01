@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Vidéo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="episode-title" id="episode-title"></div> <!-- Le titre de l'épisode est maintenant ici -->
+    </header>
+
+    <main>
+        <div class="controls">
+            <label for="season-select">Saison:</label>
+            <select id="season-select"></select>
+            <label for="episode-select">Épisode:</label>
+            <select id="episode-select"></select>
+        </div>
+
+        <div id="video-container">
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <button id="back-button">Retour</button>
+
+
+    <script>
+        // Récupérer le lien de l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoLink = urlParams.get('link');
+        let currentAnime;
+
+        // Vérifier si le lien existe
+        if (videoLink) {
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = videoLink; // Définir le lien comme source de l'iframe
+
+            // Charger les données d'anime
+            fetch('data/contenu.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur de chargement des données');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Chercher l'anime correspondant au lien
+                    currentAnime = data.find(anime => {
+                        return anime.seasons.some(season => {
+                            return season.episodes.some(episode => episode.link === videoLink);
+                        });
+                    });
+
+                    if (currentAnime) {
+                        populateSeasons(currentAnime.seasons);
+                    } else {
+                        alert('Erreur : Anime non trouvé.');
+                        window.location.href = 'index.html';
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur de chargement des données:', error);
+                });
+        } else {
+            alert('Erreur : lien vidéo manquant.');
+        }
+
+        // Fonction pour remplir la liste des saisons
+        function populateSeasons(seasons) {
+            const seasonSelect = document.getElementById('season-select');
+            seasons.forEach(season => {
+                const option = document.createElement('option');
+                option.value = season.season;
+                option.textContent = season.season;
+                seasonSelect.appendChild(option);
+            });
+
+            // Charger les épisodes de la première saison par défaut
+            if (seasons.length > 0) {
+                seasonSelect.value = seasons[0].season;
+                populateEpisodes(seasons[0]);
+            }
+
+            // Écouter le changement de saison
+            seasonSelect.addEventListener('change', () => {
+                const selectedSeason = seasons.find(season => season.season === seasonSelect.value);
+                populateEpisodes(selectedSeason);
+            });
+        }
+
+        // Fonction pour remplir la liste des épisodes
+        function populateEpisodes(season) {
+            const episodeSelect = document.getElementById('episode-select');
+            episodeSelect.innerHTML = ''; // Vider les épisodes précédents
+            const episodeTitle = document.getElementById('episode-title'); // Élément pour le titre de l'épisode
+
+            season.episodes.forEach(episode => {
+                const option = document.createElement('option');
+                option.value = episode.link;
+                option.textContent = episode.title;
+                episodeSelect.appendChild(option);
+            });
+
+            // Vérifier si le lien vidéo actuel correspond à l'un des épisodes
+            const currentEpisode = season.episodes.find(episode => episode.link === videoLink);
+            if (currentEpisode) {
+                episodeSelect.value = currentEpisode.link; // Mettre à jour la sélection de l'épisode
+                episodeTitle.textContent = `${currentAnime.title} : ${currentEpisode.title}`; // Afficher le titre de l'épisode actif avec le nom de l'anime
+            } else {
+                episodeSelect.value = season.episodes[0].link; // Sélectionner le premier épisode par défaut
+                episodeTitle.textContent = `${currentAnime.title} : ${season.episodes[0].title}`; // Afficher le titre du premier épisode avec le nom de l'anime
+            }
+
+            // Écouter le changement d'épisode
+            episodeSelect.addEventListener('change', () => {
+                const selectedLink = episodeSelect.value;
+                const videoPlayer = document.getElementById('video-player');
+                videoPlayer.src = selectedLink; // Changer la source de l'iframe
+
+                // Mettre à jour le titre de l'épisode
+                const selectedEpisode = season.episodes.find(episode => episode.link === selectedLink);
+                episodeTitle.textContent = `${currentAnime.title} : ${selectedEpisode.title}`; // Afficher le titre de l'épisode sélectionné avec le nom de l'anime
+            });
+        }
+
+        // Fonction pour le bouton de retour
+        document.getElementById('back-button').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+
+</body>
+</html>

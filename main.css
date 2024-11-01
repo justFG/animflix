@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fond sombre */
+    color: white; /* Texte blanc */
+}
+
+header {
+    background-color: #8b0000; /* Rouge foncé */
+    padding: 5px; /* Réduire l'espace */
+    text-align: center;
+    height: 50px; /* Hauteur de l'en-tête réduite */
+    display: flex; /* Utiliser flexbox pour centrer le contenu */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+
+header h1 {
+    font-size: 1.3em; /* Taille de police plus petite pour le titre */
+    margin: 0; /* Supprimer les marges */
+}
+
+.card {
+    background-color: #1e1e1e; /* Fond sombre pour les cartes */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px; /* Réduire l'espace intérieur */
+    text-align: center;
+    transition: transform 0.3s;
+    max-width: 200px; /* Limite la largeur des cartes */
+    display: inline-block; /* Affichage en ligne des cartes */
+}
+
+.card img {
+    max-width: 100%; /* Laisser l'image s'ajuster à la carte */
+    height: auto; /* Garder les proportions de l'image */
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Légère augmentation au survol */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+}
+
+.modal-content {
+    background-color: #1e1e1e; /* Fond sombre pour la modale */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white; /* Changement de couleur au survol */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#season-select {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #2d2d2d; /* Fond pour le select */
+    color: white; /* Texte en blanc */
+    border: none;
+    border-radius: 5px;
+}
+
+#episode-select {
+    margin: 10px; /* Espace autour du sélecteur (optionnel) */
+    padding: 10px; /* Espace intérieur (optionnel) */
+    background-color: #2d2d2d; /* Couleur de fond du sélecteur des épisodes */
+    color: white; /* Couleur du texte du sélecteur */
+    border: none;
+    border-radius: 5px; /* Coins arrondis (optionnel) */
+    
+}
+
+.episode {
+    margin: 10px 0;
+}
+
+.episode-link {
+    color: #c72c41; /* Couleur pour le lien des épisodes */
+    text-decoration: none;
+    display: block; /* Pour que tout l'élément soit clicable */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2d2d2d; /* Fond sombre pour les épisodes */
+}
+
+.episode-link:hover {
+    background-color: #c72c41; /* Changement de couleur au survol */
+    color: black; /* Texte noir au survol */
+}
+
+#iframe {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 100%; /* Prend toute la hauteur du conteneur */
+    border: none; /* Pas de bordure pour l'iframe */
+}
+
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+#video-player {
+    width: 800px;
+    height: 450px;
+    border: none;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.controls label {
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+select:hover {
+    border-color: #888;
+}
+
+.episode-title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#back-button {
+    position: fixed; /* Fixe le bouton en bas à droite */
+    bottom: 20px; /* Espace du bas */
+    right: 20px; /* Espace de droite */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 1em; /* Taille de la police */
+    color: white; /* Couleur du texte */
+    background-color: #8b0000; /* Couleur de fond */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+#back-button:hover {
+    background-color: #9c0202; /* Couleur de fond au survol */
+}
