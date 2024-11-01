@@ -1,58 +1,39 @@
 [
-    
-
     {
-        "title": "Euphoria",
-        "description": " Un groupe de personnages se réveille dans une pièce mystérieuse sans souvenir de leur arrivée. Pour s’échapper, ils doivent participer à des jeux psychologiques et affronter des épreuves intenses, révélant des secrets sombres et des désirs inavoués. L’histoire explore des thèmes de manipulation, de survie et de désespoir dans un cadre provocateur et mature.",
-        "image": "images/euphoria.png",
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/OnePiece.jpg",
         "seasons": [
             {
                 "season": "Saison 1",
                 "episodes": [
                     {
                         "title": "Épisode 1",
-                        "link": "https://www.trixhentai.com/wp-content/uploads/2015/06/euphoria---episode-1.mp4"
+                        "link": "https://ia904609.us.archive.org/4/items/rick-roll/Rick%20Roll.mp4"
                     },
                     {
                         "title": "Épisode 2",
-                        "link": "https://www.trixhentai.com/wp-content/uploads/2015/07/euphoria---episode-2.mp4"
-                    },
-                    {
-                        "title": "Épisode 3",
-                        "link": "https://www.trixhentai.com/wp-content/uploads/2016/05/euphoria---episode-3.mp4"
-                    },
-                    {
-                        "title": "Épisode 4",
-                        "link": "https://www.trixhentai.com/wp-content/uploads/2016/05/euphoria---episode-4.mp4"
-                    },
-                    {
-                        "title": "Épisode 5",
-                        "link": "https://www.trixhentai.com/wp-content/uploads/2016/06/euphoria---episode-5.mp4"
-                    },
-                    {
-                        "title": "Épisode 6",
-                        "link": "https://www.trixhentai.com/wp-content/uploads/2016/06/euphoria---episode-6--vo.mp4"
+                        "link": "https://ia904609.us.archive.org/4/items/rick-roll/Rick%20Roll.mp4"
                     }
-
                 ]
             }
         ]
     },
     {
-        "title": "One piece",
-        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
-        "image": "images/exemple-affiche.jpg",
+        "title": "Sword Art Online",
+        "description": "sao",
+        "image": "images/SAO.jpg",
         "seasons": [
             {
                 "season": "Saison 1",
                 "episodes": [
                     {
                         "title": "Épisode 1",
-                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                        "link": "https://ia904609.us.archive.org/4/items/rick-roll/Rick%20Roll.mp4"
                     },
                     {
                         "title": "Épisode 2",
-                        "link": "https://dood.li/e/example2"
+                        "link": "https://ia904609.us.archive.org/4/items/rick-roll/Rick%20Roll.mp4"
                     }
                 ]
             },
@@ -61,52 +42,7 @@
                 "episodes": [
                     {
                         "title": "Épisode 1",
-                        "link": "https://dood.li/e/example3"
-                    },
-                    {
-                        "title": "Épisode 2",
-                        "link": "https://dood.li/e/example4"
-                    },
-                    {
-                        "title": "Épisode 3",
-                        "link": "https://dood.li/e/example4"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title": "One piece",
-        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
-        "image": "images/exemple-affiche.jpg",
-        "seasons": [
-            {
-                "season": "Saison 1",
-                "episodes": [
-                    {
-                        "title": "Épisode 1",
-                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
-                    },
-                    {
-                        "title": "Épisode 2",
-                        "link": "https://dood.li/e/example2"
-                    }
-                ]
-            },
-            {
-                "season": "Saison 2",
-                "episodes": [
-                    {
-                        "title": "Épisode 1",
-                        "link": "https://dood.li/e/example3"
-                    },
-                    {
-                        "title": "Épisode 2",
-                        "link": "https://dood.li/e/example4"
-                    },
-                    {
-                        "title": "Épisode 3",
-                        "link": "https://dood.li/e/example4"
+                        "link": "https://ia904609.us.archive.org/4/items/rick-roll/Rick%20Roll.mp4"
                     }
                 ]
             }
