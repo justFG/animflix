@@ -74,5 +74,227 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/exemple-affiche.jpg",
+        "seasons": [
+            {
+                "season": "Saison 1",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example2"
+                    }
+                ]
+            },
+            {
+                "season": "Saison 2",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/example3"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example4"
+                    },
+                    {
+                        "title": "Épisode 3",
+                        "link": "https://dood.li/e/example4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/exemple-affiche.jpg",
+        "seasons": [
+            {
+                "season": "Saison 1",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example2"
+                    }
+                ]
+            },
+            {
+                "season": "Saison 2",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/example3"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example4"
+                    },
+                    {
+                        "title": "Épisode 3",
+                        "link": "https://dood.li/e/example4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/exemple-affiche.jpg",
+        "seasons": [
+            {
+                "season": "Saison 1",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example2"
+                    }
+                ]
+            },
+            {
+                "season": "Saison 2",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/example3"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example4"
+                    },
+                    {
+                        "title": "Épisode 3",
+                        "link": "https://dood.li/e/example4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/exemple-affiche.jpg",
+        "seasons": [
+            {
+                "season": "Saison 1",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example2"
+                    }
+                ]
+            },
+            {
+                "season": "Saison 2",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/example3"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example4"
+                    },
+                    {
+                        "title": "Épisode 3",
+                        "link": "https://dood.li/e/example4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/exemple-affiche.jpg",
+        "seasons": [
+            {
+                "season": "Saison 1",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example2"
+                    }
+                ]
+            },
+            {
+                "season": "Saison 2",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/example3"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example4"
+                    },
+                    {
+                        "title": "Épisode 3",
+                        "link": "https://dood.li/e/example4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "One piece",
+        "description": "Suivez l'histoire de Naruto Uzumaki, un ninja déterminé à devenir le Hokage.",
+        "image": "images/exemple-affiche.jpg",
+        "seasons": [
+            {
+                "season": "Saison 1",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/kal739lhazd044bpd48o1i3ny3r8925"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example2"
+                    }
+                ]
+            },
+            {
+                "season": "Saison 2",
+                "episodes": [
+                    {
+                        "title": "Épisode 1",
+                        "link": "https://dood.li/e/example3"
+                    },
+                    {
+                        "title": "Épisode 2",
+                        "link": "https://dood.li/e/example4"
+                    },
+                    {
+                        "title": "Épisode 3",
+                        "link": "https://dood.li/e/example4"
+                    }
+                ]
+            }
+        ]
     }
 ]
